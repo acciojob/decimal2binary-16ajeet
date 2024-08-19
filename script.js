@@ -9,7 +9,10 @@ function decimalToBinary(num) {
 		if(num < 2) binDig.push(num)
 	} while (num >= 2)
 
-	console.log((binDig.join('')))
+	let revArr = binDig.reverse()
+	let res = revArr.join('')
+	console.log((Number(res))
+	
   
 }
 
