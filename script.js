@@ -3,17 +3,19 @@ function decimalToBinary(num) {
 	const binDig = [];
 	do {
 		binDig.push(num%2);
-		console.log(num)
+		// console.log(num)
 		num = Math.floor(num/2);
-		console.log(num)
+		// console.log(num)
 		if(num < 2) binDig.push(num)
 	} while (num >= 2)
 
 	let revArr = binDig.reverse()
 	let res = revArr.join('')
-	console.log((Number(res))
+	res = Number(res)
+	console.log(res)
 	
   
 }
+
 
 window.decimalToBinary = decimalToBinary;
